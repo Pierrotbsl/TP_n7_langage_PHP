@@ -1,3 +1,9 @@
+<html>
+<h1>TP_n°7_langage_PHP</h1>
+<hr>
+<h2>Exercice_1</h2>
+
+
 <?php
 
 /*final*/ class Formulaire
@@ -42,7 +48,7 @@ class Formulaire2 extends Formulaire
     }
 
 }
-$form = new Formulaire2();
+$form = new Formulaire2('Exercice_1.php', 'post');
 $form->ajouterzonetexte(nom);
 $form->ajouterzonetexte(code);
 $form->ajouterbouton();
@@ -50,7 +56,5 @@ $form->ajouterradio(Homme);
 $form->ajouterradio(Femme);
 $form->ajoutercheckbox(Tennis);
 $form->ajoutercheckbox(Équitation);
-echo "<br><br>";
-$form->getform();
 
 ?>
